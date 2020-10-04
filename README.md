@@ -1,6 +1,7 @@
-# desafioPublica
+# Desafio_Publica
 Desafio Programa de Talentos Pública
-# Para downlowad basta baixar a versão 0.1.0 na tag v0.1.0
+Para downlowad basta baixar a versão 0.1.0 na tag v0.1.0
+# ------------------------------------------------------
 Arquivos Gerais:
 O arquivo index.html é o arquivo global, ele contém os dados inciais e chama todas os outros arquivos Java, ele deve ser aberto de preferência no Google Chrome
 O arquivo bola-basquete.png é somente a imagem utilizada como ícone que aparece na guia em que o usuário está logado
