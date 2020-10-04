@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resultados da Temporada</title>
+		<link rel="icon" href="bola-basquete.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo">Resultados da Temporada</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Meus Resultados</h2>
+
+				<label for="filtro-jogo" class="filtre">Filtre:</label>
+				<input type="text" id="filtro-jogo" placeholder="Digite o Número do Jogo" >
+				<table>
+					<thead>
+						<tr>
+							<th>Jogo</th>
+							<th>Placar</th>
+							<th>Mínimo da Temporada</th>
+							<th>Máximo da Temporada</th>
+							<th>Quebra recorde min.</th>
+							<th>Quebra recorde máx.</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-partidas">
+						<tr class="partida" >
+							<td class="info-jogo">1</td>
+							<td class="info-placar">13</td>
+							<td class="info-min">12</td>
+							<td class="info-max">12</td>
+							<td class="info-quebramin">0</td>
+							<td class="info-quebramax">0</td>
+						</tr>
+
+						<tr class="partida" >
+							<td class="info-jogo">2</td>
+							<td class="info-placar">24</td>
+							<td class="info-min">12</td>
+							<td class="info-max">24</td>
+							<td class="info-quebramin">0</td>
+							<td class="info-quebramax">1</td>
+						</tr>
+
+						<tr class="partida" >
+							<td class="info-jogo">3</td>
+							<td class="info-placar">10</td>
+							<td class="info-min">10</td>
+							<td class="info-max">24</td>
+							<td class="info-quebramin">1</td>
+							<td class="info-quebramax">1</td>
+						</tr>
+
+						<tr class="partida">
+							<td class="info-jogo">4</td>
+							<td class="info-placar">24</td>
+							<td class="info-min">10</td>
+							<td class="info-max">24</td>
+							<td class="info-quebramin">1</td>
+							<td class="info-quebramax">1</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 class= "paraExlcuir">*Para excluir dê dois cliques em alguma linha da tabela*</h3>
+	
+
+			</section>
+		</main>
+
+<!-- ... -->
+	<section class="container">
+	    <h2 id="titulo-form">Adicionar Novo Resultado</h2>
+	    <ul id="mensagens-erro">
+
+	    </ul>
+	    <form id="form-adiciona">
+	        <div class="grupo">
+	            <label for="jogo">Jogo:</label>
+	            <input id="jogo" name="jogo" type="text" placeholder="digite o número do jogo" class="campo">
+	        </div>
+	        <div class="grupo">
+	            <label for="placar">Placar:</label>
+	            <input id="placar" name="placar" type="text" placeholder="digite o número de pontos feitos" class="campo campo-medio">
+	        </div>
+
+	        <button id="adicionar-resultado" class="botao bto-principal">Adicionar</button>
+	    </form>
+	</section>
+
+	<script src="js/calcula_resultado.js" > </script>
+	<script src="js/form.js" > </script>
+	<script src="js/filtra.js" > </script>
+	<script src="js/remover-jogos.js" > </script>
+	
+	
+
+	</body>
+	
+</html>
